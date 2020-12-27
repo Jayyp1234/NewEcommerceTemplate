@@ -1566,6 +1566,7 @@ footer .col-sm h6{
     font-size: 17px;
     line-height: 19px;
     color: #333;
+    font-weight: bold;
     height: 20px;
 }.product-discount {
     font-size: 11px;
@@ -2045,4 +2046,7 @@ footer .col-sm h6{
 .ElectronicsBlock ul li{
   padding: 3px;
   cursor: pointer;
+}
+.category-container .col-lg:hover{
+  box-shadow: 0 4px 17px 0 rgba(0,0,0,0.1) !important;
 }
