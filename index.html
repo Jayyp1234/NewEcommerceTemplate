@@ -12,6 +12,121 @@
 </head>
 <style type="text/css">
     .hover-side_bar{position: relative;height: 47px;padding-top: 13px;}.hover-side_bar .flex-container{position: absolute;margin-left: -150px;margin-top: 10px;z-index: 999;display: none;} .hover-side_bar:hover > .flex-container{display: block;}.div .hover-side_bar .flex-container  ul li {width: 100% !important;padding: 0px !important;display: block !important;cursor: pointer;}.hover-side_bar .leftHead {padding-top: 12px;margin-bottom: 5px;}.hover-side_bar .leftHead:hover {background-color: transparent !important;}.hover-side_bar .side-bar-container ul li.navlink:hover, .hover-side_bar #topSearches li:hover {background-color: #fafafa !important;}.hover-side_bar #topSearches i {margin-top: 0px;}
+    #bigNav{
+  width: 100%;
+  margin-top: 50px;
+  height: 45px;
+  background-color: #fff;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.16);
+}
+@media all and (max-width: 540px){
+  #bigNav{
+    margin-top: 93px;
+  }
+}
+#bigNav::-webkit-scrollbar {
+  height: 0px;
+}
+#bigNav .ul{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media all and (max-width: 1054px){
+  #bigNav .ul{
+    justify-content: flex-start;
+
+  }
+}
+#bigNav .ul li{
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+#bigNav .ul li a{
+  font-weight: 550;
+  color: #e6e6e6;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#bigNav .ul li a i{
+  margin-left: 6px;
+}
+#bigNav .ul li:hover > .ElectronicsBlock{
+  display: flex;
+}
+#bigNav .ul li:hover > a{
+  color: #007bff !important;
+}
+#bigNav .ul li:hover > a >.icon-angle-down{
+  display: none !important;
+}
+#bigNav .ul li:hover > a > .icon-angle-up{
+  display: block !important;
+}
+.icon-angle-up{
+  display: none;
+}
+.ElectronicsBlock{
+  width: 90%;
+  overflow: hidden;
+  z-index: 99999;
+  margin-right: 5%;
+  display: none;
+  background-color: whitesmoke;
+  position: absolute;
+}
+
+#bigNav2 img{
+  height: 100%;
+  width: auto;
+  cursor: pointer;
+}
+#bigNav2{
+  display: none;
+  justify-content: flex-start;
+  height: 55px;
+  margin-top: 5px;
+  width: 100%;
+}
+@media all and (max-width: 1020px){
+  .ElectronicsBlock{
+    width: 100%;
+    margin-right: 0%;
+    margin-top: 0px;
+  }
+}
+
+@media all and (max-width: 800px){
+  #bigNav .ul{
+    display: none;
+  }
+  #bigNav{
+    height: 57px;
+  }
+  #bigNav2{
+  display: flex;
+  justify-content: flex-start;
+  height: 55px;
+  width: 100%;
+}
+  #bigNav .ul li:hover > .ElectronicsBlock{
+    display: none;
+  }
+}
+.ElectronicsBlock > div > div{
+  width: 20%;
+}
+.ElectronicsBlock ul li{
+  padding: 3px;
+  cursor: pointer;
+}
 </style>
 <body>
 <nav class="bg-prim" style="position: fixed;top: 0%;z-index: 99999999999;">
@@ -1034,6 +1149,153 @@
       <i class="icon-search" style="position: absolute;top:50%;color:blue;right: 3%;cursor: pointer;"></i>
     </form>
 </nav>
+ <!-- New Nav-bar -->
+<section id="bigNav">
+  <div id="bigNav2">
+    <img src="assets/img/570ea9.jpg">
+    <img src="assets/img/003fb5e37453c217.jpg">
+    <img src="assets/img/0574df.jpg">
+    <img src="assets/img/222e7382a2c2bd72.jpg">
+    <img src="assets/img/52d4da926dbea236.jpg">
+    <img src="assets/img/54abb23755dc69db.jpg">
+    <img src="assets/img/997e5486abaa75c1.jpg">
+    <img src="assets/img/aeb7da37a9e85209.jpg">
+    <img src="assets/img/b3af3e.jpg">
+    <img src="assets/img/ea3c3e826c117fea.jpg">
+    <img src="assets/img/e651df.jpg">
+    <img src="assets/img/d9e49f9ef922a2a8.jpg">
+    <img src="assets/img/c6c1ae1f01c84f33.jpg">
+  </div>
+  <ul class="ul">
+    <li class="bigNavList"><a href="#"> Electronics <i class="icon-angle-down"></i><i class='icon-angle-up'></i></a> 
+      <div class="ElectronicsBlock">
+    <div style="width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;font-size: 86%;color: grey;">
+    <div style="background-color: white;">
+      <ul>
+        <li>Mobiles</li>
+        <li>Mi</li>
+        <li>RealMe</li>
+        <li>Samsung</li>
+        <li>OPPO</li>
+        <li>Infinix</li>
+        <li>Apple</li>
+        <li>Vivo</li>
+        <li>Honor</li>
+        <li>Asus</li>
+        <li>Poco X2</li>
+        <li>realme Narzo 10</li>
+        <li>Infinix Hot 9</li>
+        <li>IQOO 3</li>
+        <li>iPhone SE</li>
+        <li>Motorola razr</li>
+        <li>realme Narzo 10A</li>
+        <li>Motorola g8 power lite</li>
+      </ul>
+    </div>
+    
+    <div>
+      <ul>
+        <li>Mobile Accessories</li>
+        <li>Mobile Cases</li>
+        <li>Headphones & Headsets</li>
+        <li>Power Banks</li>
+        <li>Screenguards</li>
+        <li>Memory Cards</li>
+        <li>Smart Headphones</li>
+        <li>Mobile Cables</li>
+        <li>Mobile Chargers</li>
+        <li>Mobile Holders</li>
+        <li>Smart Wearable Tech</li>
+        <li>Smart Watches</li>
+        <li>Smart Glasses (VR)</li>
+        <li>Smart Bands</li>
+        <li>Health Care Appliances</li>
+        <li>Bp Monitors</li>
+        <li>Weighing Scale</li>
+      </ul>
+    </div>
+    
+    <div  style="background-color: white;">
+      <ul>
+        <li>Laptops</li>
+        <li>Gaming Laptops</li>
+        <li>Desktop PCs</li>
+        <li>Gaming & Accessories</li>
+        <li>External Hard Disks</li>
+        <li>Computer Accessories</li>
+        <li>Pendrives</li>
+        <li>Laptop Skins & Decals</li>
+        <li>Laptop Bags</li>
+        <li>Mouse</li>
+        <li>Computer Peripherals</li>
+        <li>Printers & Ink Cartridges</li>
+        <li>Monitors</li>
+        <li>Tablets</li>
+        <li>Apple iPads</li>
+      </ul>
+    </div>
+    
+    <div>
+      <ul>
+        <li>Televisions</li>
+        <li>Speakers</li>
+        <li>Home Audio Speakers</li>
+        <li>Home Theatres</li>
+        <li>Soundbars</li>
+        <li>DTH Set Top Box</li>
+        <li>Bluetooth Speakers</li>
+        <li>Smart Home Automation</li>
+        <li>Google Nest</li>
+        <li>Camera</li>
+        <li>DSLR & Mirrorless</li>
+        <li>Compact & Bridge Cameras</li>
+        <li>Sports & Action</li>
+        <li>Camera Accessories</li>
+        <li>Lens</li>
+        <li>Tripods</li>
+        <li>Network Components</li>
+        <li>Routers</li>
+      </ul>
+    </div>
+    
+    <div  style="background-color: white;">
+      <ul>
+        <li>Featured</li>
+        <li>Google Assistant Store</li>
+        <li>Laptops on Buyback Guarantee</li>
+        <li>Flipkart SmartBuy</li>
+        <li>Li-Polymer Power Banks</li>
+        <li>Sony PS4 Pro & Slim</li>
+        <li>Apple Products</li>
+        <li>Microsoft Store</li>
+        <li>Lenovo Phab Series</li>
+        <li>JBL Speakers</li>
+        <li>Smartphones On Buyback Guarantee</li>
+        <li>Philips</li>
+        <li>Dr. Morepen</li>
+        <li>Complete Mobile Protection</li>
+        <li>Mobiles No Cost EMI</li>
+        <li>Huawei Watch Gt 2e Smart Watch</li>
+      </ul>
+    </div>
+  </div>
+    
+  </div>
+    </li>
+    <li class="bigNavList"><a href="#"> Tvs&appliances <i class="icon-angle-down"></i><i class='icon-angle-up'></i></a> </li>
+    <li class="bigNavList"><a href="#"> Men <i class="icon-angle-down"></i><i class='icon-angle-up'></i></a> </li>
+    <li class="bigNavList"><a href="#"> Women <i class="icon-angle-down"></i><i class='icon-angle-up'></i></a>  </li>
+    <li class="bigNavList"><a href="#"> Baby&Kids <i class="icon-angle-down"></i><i class='icon-angle-up'></i> </a> </li>
+    <li class="bigNavList"><a href="#"> Home&Furniture<i class="icon-angle-down"></i><i class='icon-angle-up'></i> </a> </li>
+    <li class="bigNavList"><a href="#"> Sports,Books&More<i class="icon-angle-down"></i><i class='icon-angle-up'></i></a>  </li>
+    <li class="bigNavList"><a href="https://brave-bhaskara-02441c.netlify.app/"> Groceries  <i class="icon-angle-down"></i><i class='icon-angle-up'></i></a> </li>
+    <li class="bigNavList"><a href="#"> OfferZone <i class="icon-angle-down"></i><i class='icon-angle-up'></i></a> </li>
+  </ul>
+  
+</section>
 <div class="side-bar" style="z-index: 99999999999;">
   <ul>
     <hr width="100%" style="margin: 0px;">
@@ -1052,24 +1314,6 @@
       <li> <a href="" class="drop-links"><i class='icon-download'> </i>Download App</a></li>
   </ul>
 </div>
-<!-- New Nav-bar -->
-<section id="bigNav">
-  <div id="bigNav2">
-    <img src="assets/img/570ea9.jpg">
-    <img src="assets/img/003fb5e37453c217.jpg">
-    <img src="assets/img/0574df.jpg">
-    <img src="assets/img/222e7382a2c2bd72.jpg">
-    <img src="assets/img/52d4da926dbea236.jpg">
-    <img src="assets/img/54abb23755dc69db.jpg">
-    <img src="assets/img/997e5486abaa75c1.jpg">
-    <img src="assets/img/aeb7da37a9e85209.jpg">
-    <img src="assets/img/b3af3e.jpg">
-    <img src="assets/img/ea3c3e826c117fea.jpg">
-    <img src="assets/img/e651df.jpg">
-    <img src="assets/img/d9e49f9ef922a2a8.jpg">
-    <img src="assets/img/c6c1ae1f01c84f33.jpg">
-  </div>
-</section>
 <div class="container topper" style="padding-top: 20px;">
         <div class="flex-container">
                 <div class="side-bar-container">
@@ -2158,6 +2402,7 @@
                               justify-content: center;
                               height: 5;
                               display: grid;
+                              color: white;
                             }
                             .carousel-controller{
                                 box-shadow: 0 4px 10px 0 rgba(0,0,0,0.1);
@@ -2359,28 +2604,27 @@
                                              </a>
                         </div>
                         <div class="product-tuple-description ">
-                                             
-                                             <div class="product-desc-rating ">
-                                                 <a class="hashAdded" href="#">
-                                                     <p class="product-title" title="PranaVital PRANA 360 Air Purifier">PranaVital PRANA 360 Air Purifier</p>
-                                                     <div class="product-price-row clearfix">
-                                                         <div class="lfloat marR10">
-                                                             <span class="lfloat product-desc-price strike ">Rs. 19,999</span>
-                                                             <span class="lfloat product-price" style="margin-right: 5px;">Rs.  13,699</span>
-                                                         </div>
-                                                         <div class="product-discount">
-                                                             <span>32% Off</span>
-                                                         </div>
-                                                         <div class="Ratings"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star active"></i></div>
-                                                     </div>
-                                                 </a>
-                                             </div>
+                             <div class="product-desc-rating ">
+                                 <a class="hashAdded" href="#">
+                                     <p class="product-title" title="PranaVital PRANA 360 Air Purifier">PranaVital PRANA 360 Air Purifier</p>
+                                     <div class="product-price-row clearfix">
+                                         <div class="lfloat marR10">
+                                             <span class="lfloat product-desc-price strike ">Rs. 19,999</span>
+                                             <span class="lfloat product-price" style="margin-right: 5px;">Rs.  13,699</span>
+                                         </div>
+                                         <div class="product-discount">
+                                             <span>32% Off</span>
+                                         </div>
+                                         <div class="Ratings"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star active"></i></div>
+                                     </div>
+                                 </a>
+                             </div>
                         </div>
                         <div class="product-hover-state">
-                                             <span>Add to Cart <i class="icon-shopping-cart"></i></span>
-                                             <div class="price"> 
-                                                 <b class="min">-</b> <input type="text" name="" value="1"> <b class="max">+</b>
-                                             </div>
+                            <span>Add to Cart <i class="icon-shopping-cart"></i></span>
+                            <div class="price"> 
+                                <b class="min">-</b> <input type="text" name="" value="1"> <b class="max">+</b>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -3906,6 +4150,10 @@
    $('.hover-side_bar').css('visibility' , 'hidden');
    $('.popper a').attr('href' , 'productview.html');
   });
+  $('.product-hover-state span').click(function(){
+    $(this).hide();
+    $(this).next().css('display' , 'flex');
+  });
   $('.more').click(function(){
     $('.div ul').slideToggle();
   });
@@ -3932,6 +4180,8 @@
   $('.min').click(function(){
     if(parseInt($(this).siblings('input').val()) === 1){
         $(this).siblings('input').val(1);
+        $(this).parent().hide();
+        $(this).parent().prev().show();
     }
     else{
         $(this).siblings('input').val(parseInt($(this).siblings('input').val()) - 1);
