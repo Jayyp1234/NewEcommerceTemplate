@@ -166,7 +166,7 @@ nav .div{
     background-color: white;
     width: 260px;
     right: 3.5%;
-    top: 55px;
+    top: 50px;
     color: black;
     border:1px solid #e8e8e8;
     display: none;
@@ -762,11 +762,8 @@ hr{
     cursor: pointer;
 }   
 .div ul li:hover{
-    background-color:#791735 !important;
+    background-color: #09d02b !important;
     color: white;
-}
-.div ul li:last-child:hover{
-  background-color:transparent !important;
 }
 .div ul li a{
   display: flex;
@@ -1928,9 +1925,14 @@ footer .col-sm h6{
 }
 .lfloat{
   display: flex;
+  justify-content: center;
 }
 .lfloat .strike{
   order: 1;
+}
+.Ratings{
+  float: right! important;
+  margin-right: 7px;
 }
 #bigNav{
   width: 100%;
