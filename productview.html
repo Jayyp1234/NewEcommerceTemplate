@@ -3877,14 +3877,14 @@
     }
     .floater .filter ul {
        position: absolute;
-    background-color: white;
-    z-index: 999999;
-    width: 130px;
-    right: 3.5%;
-    top: 46px;
-    display: none;
-    color: black;
-    border: 1px solid #e8e8e8;
+        background-color: white;
+        z-index: 999999;
+        width: 130px;
+        right: 3.5%;
+        top: 46px;
+        display: none;
+        color: black;
+        border: 1px solid #e8e8e8;
     }
     .floater .filter ul li{
         width: 100%;
@@ -4814,20 +4814,76 @@
 <script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
+    var windowWidth = $(window).width();
+      if(windowWidth < 520){
+          $(window).scroll(function() {
+          if ($(this).scrollTop() < 250) {
+            $(".floater").css({
+              "position" : "static"
+            });
+          }
+          else if ($(this).scrollTop() > 250) {
+            $(".floater").css({
+              "position": "fixed",
+              "z-index":"9999999999999999999",
+              "top":"89px"
+            });
+          }
+      });
+    }
+    else if(windowWidth > 490){
+        $(window).scroll(function() {
+          if ($(this).scrollTop() < 250) {
+            $(".floater").css({
+              "position" : "static"
+            });
+          }
+          else if ($(this).scrollTop() > 250) {
+            $(".floater").css({
+              "position": "fixed",
+              "z-index":"9999999999999999999",
+              "top":"50px"
+              
+            });
+          }
+      });
+    }
   });
-  $(window).scroll(function() {
-      if ($(this).scrollTop() < 250) {
-        $(".floater").css({
-          "position" : "static"
-        });
-      }
-      else if ($(this).scrollTop() > 250) {
-        $(".floater").css({
-          "position": "fixed",
-          "z-index":"9999999999999999999",
-          "top":"89px"
-        });
-      }
+  $(window).on("resize", function(event){
+    var windowWidth = $(window).width();
+      if(windowWidth < 520){
+          $(window).scroll(function() {
+          if ($(this).scrollTop() < 250) {
+            $(".floater").css({
+              "position" : "static"
+            });
+          }
+          else if ($(this).scrollTop() > 250) {
+            $(".floater").css({
+              "position": "fixed",
+              "z-index":"9999999999999999999",
+              "top":"89px"
+            });
+          }
+      });
+    }
+    else if(windowWidth > 490){
+        $(window).scroll(function() {
+          if ($(this).scrollTop() < 250) {
+            $(".floater").css({
+              "position" : "static"
+            });
+          }
+          else if ($(this).scrollTop() > 250) {
+            $(".floater").css({
+              "position": "fixed",
+              "z-index":"9999999999999999999",
+              "top":"50px"
+              
+            });
+          }
+      });
+    }
   });
   $('.product-hover-state span').click(function(){
     $(this).hide();
