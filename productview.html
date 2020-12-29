@@ -3720,11 +3720,11 @@
 <style type="text/css">
     .scroller{
         width: 100%;
-        margin-top: -20px;
+        margin-top: 0px;
         background-color: #fff;
         overflow-x: scroll;
         overflow-y: hidden;
-        box-shadow: 0 1px 1px 0 rgba(0,0,0,.16);
+
     }
     .scroller::-webkit-scrollbar {
       height: 0px;
@@ -3735,6 +3735,7 @@
         align-items: center;
         height: 47px;
         width: 100%;
+
     }
     .scroller-body span:first-child{
         margin-left: 20px;
@@ -3742,7 +3743,7 @@
     .scroller-body span{
         margin-right: 20px;
         font-size: 15px;
-        background-color: grey;
+        background-color: #cacaca;
         border-radius: 5px;
         padding: 5px 10px;
         color: white;
@@ -3756,6 +3757,7 @@
     .no-carosuel{
         background-color: #fff;
         display: flex;
+        border-bottom: 1px solid rgb(0 0 0 / 16%);
 
     }
     .card-image{
@@ -3772,9 +3774,158 @@
     .product-content .lfloat{
         justify-content: flex-start;
         margin-bottom: 5px;
+        display: inline-flex;
     }
-}
+    .product-content .product-discount {
+        float: right;
+    }
+    .product-content .Ratings {
+    float: none !important;
+    margin-right: 7px;
+    }
+    .product-content .product-hover-state span {
+        font-size: 13px;
+        color: white;
+        background-color: #09d02b;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.6s ease-in-out;
+        display: flex;
+        align-content: baseline;
+        width: 100%;
+        text-transform: uppercase;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .floater .filter ul {
+       position: absolute;
+    background-color: white;
+    z-index: 999999;
+    width: 130px;
+    right: 3.5%;
+    top: 28px;
+    display: none;
+    color: black;
+    border: 1px solid #e8e8e8;
+    }
+    .floater .filter ul li{
+        width: 100%;
+    padding: 4px;
+    display: flex;
+    cursor: pointer;
+    }
+    .floater .filter ul li.active, .floater .filter ul li:hover{
+        color: white;
+        background-color: #09d02b;
+    }
 </style>
+<section class="floater" style="height: 34px;align-items: center;justify-content: flex-end;position: static;background-color: #cacaca;">
+       <a class="similarity filter"  style="background-color: #fff;margin-right: 20px;color: black !important;height: 25px; padding: 0px;border: none;position: relative;">
+          <i class="icon-compare_arrows" style="padding-right: 15px;
+    padding-left: 10px;"></i> <div style="height: 25px;
+    border-left: 1px solid black;margin: 0px;"></div> <span style="margin-right: 10px;padding-left: 15px;
+    padding-right: 10px;" data-toggle="modal" data-target="#myModal"> Filter</span>
+        <ul class="meek">
+           <li class="active">Shoe</li>
+           <li>Home</li>
+           <li>Home</li>
+           <li>Home</li>
+           <li>Home</li>
+       </ul>
+       </a>
+
+       
+       <!--
+       <div style="display: grid;">
+           <div style="display: flex;margin-bottom: 4px;">
+                <a class="filter-card" style="margin-right: 5px;">
+                    <span>Price</span>
+                </a>
+                <div class="filter-container">
+                    <div style="display: flex;justify-content: space-between;">
+                        <span class="label-head">Price</span>
+                        <div>
+                            <span class="clear-tag">Clear</span>
+                            <button>Apply</button>
+                        </div>
+                    </div>
+                    <hr style="border-top: 1px solid rgb(0 0 0 / 18%) !important;">
+                    <li style="position: relative;width: 100%;">
+                        <div class="slider-range-wrap bid">
+                            <div id="slider-range2" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                                <div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;"></div>
+                                <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span>
+                                <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span>
+                            </div>
+                            <span class="min-range">Min</span>
+                            <span class="max-range">Max</span>
+                        </div>
+                    </li>
+                    <li class="sub-cat-list range cat-list " style="align-items: center;display: flex;justify-content: space-around;">
+                        <input type="" name="" id="minimum2"> <span>- </span>  <input type="" name="" id="maximum2">
+                    </li>
+                    <hr style="border-top: 1px solid rgb(0 0 0 / 18%) !important;">
+                    <div style="width: 100%;display: flex;justify-content: flex-end;">
+                         <button class="close-thisbox">Close</button>
+                    </div>
+                </div>
+                <a class="filter-card">
+                    <span>Style</span>
+                </a>
+                <div class="filter-container">
+                    <div style="display: flex;justify-content: space-between;">
+                        <span class="label-head">Price</span>
+                        <div>
+                            <span class="clear-tag">Clear</span>
+                            <button>Apply</button>
+                        </div>
+                    </div>
+                    <hr style="border-top: 1px solid rgb(0 0 0 / 18%) !important;">
+                    <a href="#" class="similarity" style="display: inline-block;margin-bottom: 3px;">cloth</a>
+                    <a href="#" class="similarity" style="display: inline-block;margin-bottom: 3px;">cloth</a>
+                    <a href="#" class="similarity" style="display: inline-block;margin-bottom: 3px;">cloth</a>
+                    <a href="#" class="similarity" style="display: inline-block;margin-bottom: 3px;" >cloth</a>
+                    <a href="#" class="similarity" style="display: inline-block;margin-bottom: 3px;">cloth</a>
+                    <a href="#" class="similarity" style="display: inline-block;margin-bottom: 3px;" >cloth</a>
+                    <a href="#" class="similarity" style="display: inline-block;margin-bottom: 3px;">cloth</a>
+                    <hr style="border-top: 1px solid rgb(0 0 0 / 18%) !important;">
+                    <div style="width: 100%;display: flex;justify-content: flex-end;">
+                         <button class="close-thisbox">Close</button>
+                    </div>
+                </div>
+           </div>
+           <div style="display: flex;">
+                <a class="filter-card" style="margin-right: 5px;">
+                    <span>Size</span>
+                </a>
+                <div class="filter-container">
+                    <div style="display: flex;justify-content: space-between;">
+                        <span class="label-head">Price</span>
+                        <div>
+                            <span class="clear-tag">Clear</span>
+                            <button>Apply</button>
+                        </div>
+                    </div>
+                    <hr style="border-top: 1px solid rgb(0 0 0 / 18%) !important;">
+                    <a href="#" class="similarity" style="display: inline-block;margin-bottom: 3px;">cloth</a>
+                    <a href="#" class="similarity" style="display: inline-block;margin-bottom: 3px;">cloth</a>
+                    <a href="#" class="similarity" style="display: inline-block;margin-bottom: 3px;">cloth</a>
+                    <a href="#" class="similarity" style="display: inline-block;margin-bottom: 3px;" >cloth</a>
+                    <a href="#" class="similarity" style="display: inline-block;margin-bottom: 3px;">cloth</a>
+                    <a href="#" class="similarity" style="display: inline-block;margin-bottom: 3px;" >cloth</a>
+                    <a href="#" class="similarity" style="display: inline-block;margin-bottom: 3px;">cloth</a>
+                    <hr style="border-top: 1px solid rgb(0 0 0 / 18%) !important;">
+                    <div style="width: 100%;display: flex;justify-content: flex-end;">
+                         <button class="close-thisbox">Close</button>
+                    </div>
+                </div>
+                <a class="filter-card v2.0" data-toggle="modal" data-target="#myModal" >
+                    <span>+More</span>
+                </a>
+           </div>
+       </div>-->
+</section>
 <div class="mobile-view">
     <div class="scroller">
         <div class="scroller-body">
@@ -3914,100 +4065,6 @@
         </div>
     </div>
 </div>
-
-<section class="floater" style="overflow-x: scroll;overflow-y:hidden;height: 65px;flex-wrap: nowrap;align-items: center;justify-content: flex-start;">
-       <a class="similarity filter" data-toggle="modal" data-target="#myModal" style="margin-right: 20px;color: white !important;">
-          <i class="icon-compare_arrows"></i> <div></div> <span style="margin-right: 10px;"> Filter</span>
-       </a>
-       <div style="display: grid;">
-           <div style="display: flex;margin-bottom: 4px;">
-                <a class="filter-card" style="margin-right: 5px;">
-                    <span>Price</span>
-                </a>
-                <div class="filter-container">
-                    <div style="display: flex;justify-content: space-between;">
-                        <span class="label-head">Price</span>
-                        <div>
-                            <span class="clear-tag">Clear</span>
-                            <button>Apply</button>
-                        </div>
-                    </div>
-                    <hr style="border-top: 1px solid rgb(0 0 0 / 18%) !important;">
-                    <li style="position: relative;width: 100%;">
-                        <div class="slider-range-wrap bid">
-                            <div id="slider-range2" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
-                                <div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 100%;"></div>
-                                <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;"></span>
-                                <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 100%;"></span>
-                            </div>
-                            <span class="min-range">Min</span>
-                            <span class="max-range">Max</span>
-                        </div>
-                    </li>
-                    <li class="sub-cat-list range cat-list " style="align-items: center;display: flex;justify-content: space-around;">
-                        <input type="" name="" id="minimum2"> <span>- </span>  <input type="" name="" id="maximum2">
-                    </li>
-                    <hr style="border-top: 1px solid rgb(0 0 0 / 18%) !important;">
-                    <div style="width: 100%;display: flex;justify-content: flex-end;">
-                         <button class="close-thisbox">Close</button>
-                    </div>
-                </div>
-                <a class="filter-card">
-                    <span>Style</span>
-                </a>
-                <div class="filter-container">
-                    <div style="display: flex;justify-content: space-between;">
-                        <span class="label-head">Price</span>
-                        <div>
-                            <span class="clear-tag">Clear</span>
-                            <button>Apply</button>
-                        </div>
-                    </div>
-                    <hr style="border-top: 1px solid rgb(0 0 0 / 18%) !important;">
-                    <a href="#" class="similarity" style="display: inline-block;margin-bottom: 3px;">cloth</a>
-                    <a href="#" class="similarity" style="display: inline-block;margin-bottom: 3px;">cloth</a>
-                    <a href="#" class="similarity" style="display: inline-block;margin-bottom: 3px;">cloth</a>
-                    <a href="#" class="similarity" style="display: inline-block;margin-bottom: 3px;" >cloth</a>
-                    <a href="#" class="similarity" style="display: inline-block;margin-bottom: 3px;">cloth</a>
-                    <a href="#" class="similarity" style="display: inline-block;margin-bottom: 3px;" >cloth</a>
-                    <a href="#" class="similarity" style="display: inline-block;margin-bottom: 3px;">cloth</a>
-                    <hr style="border-top: 1px solid rgb(0 0 0 / 18%) !important;">
-                    <div style="width: 100%;display: flex;justify-content: flex-end;">
-                         <button class="close-thisbox">Close</button>
-                    </div>
-                </div>
-           </div>
-           <div style="display: flex;">
-                <a class="filter-card" style="margin-right: 5px;">
-                    <span>Size</span>
-                </a>
-                <div class="filter-container">
-                    <div style="display: flex;justify-content: space-between;">
-                        <span class="label-head">Price</span>
-                        <div>
-                            <span class="clear-tag">Clear</span>
-                            <button>Apply</button>
-                        </div>
-                    </div>
-                    <hr style="border-top: 1px solid rgb(0 0 0 / 18%) !important;">
-                    <a href="#" class="similarity" style="display: inline-block;margin-bottom: 3px;">cloth</a>
-                    <a href="#" class="similarity" style="display: inline-block;margin-bottom: 3px;">cloth</a>
-                    <a href="#" class="similarity" style="display: inline-block;margin-bottom: 3px;">cloth</a>
-                    <a href="#" class="similarity" style="display: inline-block;margin-bottom: 3px;" >cloth</a>
-                    <a href="#" class="similarity" style="display: inline-block;margin-bottom: 3px;">cloth</a>
-                    <a href="#" class="similarity" style="display: inline-block;margin-bottom: 3px;" >cloth</a>
-                    <a href="#" class="similarity" style="display: inline-block;margin-bottom: 3px;">cloth</a>
-                    <hr style="border-top: 1px solid rgb(0 0 0 / 18%) !important;">
-                    <div style="width: 100%;display: flex;justify-content: flex-end;">
-                         <button class="close-thisbox">Close</button>
-                    </div>
-                </div>
-                <a class="filter-card v2.0" data-toggle="modal" data-target="#myModal" >
-                    <span>+More</span>
-                </a>
-           </div>
-       </div>
-</section>
     <style type="text/css">
         @media (min-width: 576px){
             .modal-dialog {
@@ -4798,6 +4855,15 @@
       $('.categories').hide();
       $('.categories').eq(9).show();
   });
+  $('.icon-compare_arrows').click(function(){
+    $(this).siblings('ul').slideToggle();
+  });
+  $('.meek li').click(function(){
+    $(this).siblings().removeClass();
+    $(this).addClass('active');
+    
+  });
+  
   $('.max').click(function(){
     $(this).siblings('input').val(parseInt($(this).siblings('input').val()) + 1);
   });
