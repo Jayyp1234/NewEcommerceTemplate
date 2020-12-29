@@ -1541,6 +1541,7 @@ footer .col-sm h6{
 }.product-title {
     color:#09d02b;
     font: 13px;
+    font-weight: bold;
     margin-bottom: 11px;
     max-height: 53px;
     margin-top: 4px;

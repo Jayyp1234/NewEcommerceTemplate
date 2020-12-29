@@ -43,6 +43,9 @@
 .icon-th-list{
     font-weight: bolder;font-size: 110%;margin-right: 10px;margin-left: 5px;cursor: pointer;display: contents;
 }
+.mobile-view{
+    display: block;
+}
 @media (max-width: 800px){
     .main-section {
         width: calc(100%);
@@ -52,6 +55,12 @@
     }
     .icon-th-list{
         display: none;
+    }
+    .category-container{
+        display: none;
+    }
+    .mobile-view{
+        display: block;
     }
 }
 </style>
@@ -1134,12 +1143,12 @@
   </div>
   <ul class="ul">
     <li class="bigNavList"><a href="#"> Electronics <i class="icon-angle-down"></i><i class='icon-angle-up'></i></a> 
-      <div class="ElectronicsBlock">
-    <div style="width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;font-size: 86%;color: grey;">
-    <div style="background-color: white;">
+        <div class="ElectronicsBlock">
+            <div style="width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;font-size: 86%;color: grey;">
+            <div style="background-color: white;">
       <ul>
         <li>Mobiles</li>
         <li>Mi</li>
@@ -1160,9 +1169,9 @@
         <li>realme Narzo 10A</li>
         <li>Motorola g8 power lite</li>
       </ul>
-    </div>
-    
-    <div>
+            </div>
+          
+            <div>
       <ul>
         <li>Mobile Accessories</li>
         <li>Mobile Cases</li>
@@ -1182,9 +1191,9 @@
         <li>Bp Monitors</li>
         <li>Weighing Scale</li>
       </ul>
-    </div>
-    
-    <div  style="background-color: white;">
+            </div>
+          
+            <div  style="background-color: white;">
       <ul>
         <li>Laptops</li>
         <li>Gaming Laptops</li>
@@ -1202,9 +1211,9 @@
         <li>Tablets</li>
         <li>Apple iPads</li>
       </ul>
-    </div>
-    
-    <div>
+            </div>
+          
+            <div>
       <ul>
         <li>Televisions</li>
         <li>Speakers</li>
@@ -1225,9 +1234,9 @@
         <li>Network Components</li>
         <li>Routers</li>
       </ul>
-    </div>
-    
-    <div  style="background-color: white;">
+            </div>
+          
+            <div  style="background-color: white;">
       <ul>
         <li>Featured</li>
         <li>Google Assistant Store</li>
@@ -1246,8 +1255,8 @@
         <li>Mobiles No Cost EMI</li>
         <li>Huawei Watch Gt 2e Smart Watch</li>
       </ul>
-    </div>
-  </div>
+            </div>
+        </div>
     
   </div>
     </li>
@@ -1263,8 +1272,7 @@
   
 </section>
 <div class="topper" style="padding-top: 20px;padding-right: 20px;padding-left: 20px;">
-        <div class="flex-container">
-                
+        <div class="flex-container">      
                 <div>
                 <div class="left-wrapper" style="">
                     <div class="cat-nav-wrapper dp-widget dp-fired">
@@ -1601,10 +1609,10 @@
                     </div>
                 </div><br> 
                <div style="width: 100%;" class="category-container">
-                <div class="row" style="margin: 0px;">
+                        <div class="row" style="margin: 0px;">
                     <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
                         <div class="MultiCarousel-inner">
-                <div class="item">
+                            <div class="item">
                     <div class="pad15">
                        <li class="" style="padding: 0px;">
                             <div class="product-tuple-image">
@@ -1638,8 +1646,8 @@
                              </div>
                         </li>
                     </div>
-                </div>
-                <div class="item">
+                            </div>
+                            <div class="item">
                     <div class="pad15">
                         <li class="" style="padding: 0px;">
                             <div class="product-tuple-image">
@@ -1673,8 +1681,8 @@
                              </div>
                         </li>
                     </div>
-                </div>
-                <div class="item">
+                            </div>
+                            <div class="item">
                     <div class="pad15">
                        <li class="" style="padding: 0px;">
                             <div class="product-tuple-image">
@@ -1708,8 +1716,8 @@
                              </div>
                         </li>
                     </div>
-                </div>
-                <div class="item">
+                            </div>
+                            <div class="item">
                     <div class="pad15">
                         <li class="" style="padding: 0px;">
                             <div class="product-tuple-image">
@@ -1743,8 +1751,8 @@
                              </div>
                         </li>
                     </div>
-                </div>
-                <div class="item">
+                            </div>
+                            <div class="item">
                     <div class="pad15">
                        <li class="" style="padding: 0px;">
                             <div class="product-tuple-image">
@@ -1778,8 +1786,8 @@
                              </div>
                         </li>
                     </div>
-                </div>
-                <div class="item">
+                            </div>
+                            <div class="item">
                     <div class="pad15">
                         <li class="" style="padding: 0px;">
                             <div class="product-tuple-image">
@@ -1813,8 +1821,8 @@
                              </div>
                         </li>
                     </div>
-                </div>
-                <div class="item">
+                            </div>
+                            <div class="item">
                     <div class="pad15">
                        <li class="" style="padding: 0px;">
                             <div class="product-tuple-image">
@@ -1848,8 +1856,8 @@
                              </div>
                         </li>
                     </div>
-                </div>
-                <div class="item">
+                            </div>
+                            <div class="item">
                     <div class="pad15">
                         <li class="" style="padding: 0px;">
                             <div class="product-tuple-image">
@@ -1883,8 +1891,8 @@
                              </div>
                         </li>
                     </div>
-                </div>
-                <div class="item">
+                            </div>
+                            <div class="item">
                     <div class="pad15">
                        <li class="" style="padding: 0px;">
                             <div class="product-tuple-image">
@@ -1918,8 +1926,8 @@
                              </div>
                         </li>
                     </div>
-                </div>
-                <div class="item">
+                            </div>
+                            <div class="item">
                     <div class="pad15">
                         <li class="" style="padding: 0px;">
                             <div class="product-tuple-image">
@@ -1953,8 +1961,8 @@
                              </div>
                         </li>
                     </div>
-                </div>
-                <div class="item">
+                            </div>
+                            <div class="item">
                     <div class="pad15">
                        <li class="" style="padding: 0px;">
                             <div class="product-tuple-image">
@@ -1988,8 +1996,8 @@
                              </div>
                         </li>
                     </div>
-                </div>
-                <div class="item">
+                            </div>
+                            <div class="item">
                     <div class="pad15">
                         <li class="" style="padding: 0px;">
                             <div class="product-tuple-image">
@@ -2023,8 +2031,8 @@
                              </div>
                         </li>
                     </div>
-                </div>
-                <div class="item">
+                            </div>
+                            <div class="item">
                     <div class="pad15">
                        <li class="" style="padding: 0px;">
                             <div class="product-tuple-image">
@@ -2058,8 +2066,8 @@
                              </div>
                         </li>
                     </div>
-                </div>
-                <div class="item">
+                            </div>
+                            <div class="item">
                     <div class="pad15">
                         <li class="" style="padding: 0px;">
                             <div class="product-tuple-image">
@@ -2093,8 +2101,8 @@
                              </div>
                         </li>
                     </div>
-                </div>
-                <div class="item">
+                            </div>
+                            <div class="item">
                     <div class="pad15">
                        <li class="" style="padding: 0px;">
                             <div class="product-tuple-image">
@@ -2128,8 +2136,8 @@
                              </div>
                         </li>
                     </div>
-                </div>
-                <div class="item">
+                            </div>
+                            <div class="item">
                     <div class="pad15">
                         <li class="" style="padding: 0px;">
                             <div class="product-tuple-image">
@@ -2163,8 +2171,8 @@
                              </div>
                         </li>
                     </div>
-                </div>
-                <div class="item">
+                            </div>
+                            <div class="item">
                     <div class="pad15">
                        <li class="" style="padding: 0px;">
                             <div class="product-tuple-image">
@@ -2198,8 +2206,8 @@
                              </div>
                         </li>
                     </div>
-                </div>
-                <div class="item">
+                            </div>
+                            <div class="item">
                     <div class="pad15">
                         <li class="" style="padding: 0px;">
                             <div class="product-tuple-image">
@@ -2233,8 +2241,8 @@
                              </div>
                         </li>
                     </div>
-                </div>
-                <div class="item">
+                            </div>
+                            <div class="item">
                     <div class="pad15">
                        <li class="" style="padding: 0px;">
                             <div class="product-tuple-image">
@@ -2268,8 +2276,8 @@
                              </div>
                         </li>
                     </div>
-                </div>
-                <div class="item">
+                            </div>
+                            <div class="item">
                     <div class="pad15">
                         <li class="" style="padding: 0px;">
                             <div class="product-tuple-image">
@@ -2303,7 +2311,7 @@
                              </div>
                         </li>
                     </div>
-                </div>
+                            </div>
                         </div>
                         <button class="btn btn-primary leftLst"><i class="icon-chevron-left"   style="background-color: transparent;width: auto;height: auto;"></i></button>
                         <button class="btn btn-primary rightLst"><i class="icon-chevron-right" style="background-color: transparent;width: auto;height: auto;"></i></button>
@@ -3698,10 +3706,206 @@
          </div>
             
             </div>
-            <br>
-    </div>
+</div>
+<style type="text/css">
+    .scroller{
+        width: 100%;
+        margin-top: -20px;
+        background-color: #fff;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        box-shadow: 0 1px 1px 0 rgba(0,0,0,.16);
+    }
+    .scroller::-webkit-scrollbar {
+      height: 0px;
+    }
+    .scroller-body{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 55px;
+        width: 100%;
+    }
+    .scroller-body span:first-child{
+        margin-left: 20px;
+    }
+    .scroller-body span{
+        margin-right: 20px;
+        font-size: 15px;
+        background-color: grey;
+        border-radius: 5px;
+        padding: 7px 12px;
+        color: white;
+        display: inline-table;
+        cursor: pointer;
+    }
+    .scroller-body span.active{
+        color: white;
+        background-color: #09d02b;
+    }
+    .no-carosuel{
+        background-color: #fff;
+        display: flex;
 
-    <section class="floater" style="overflow-x: scroll;overflow-y:hidden;height: 65px;flex-wrap: nowrap;align-items: center;justify-content: flex-start;">
+    }
+    .card-image{
+        width: 40%;
+    }
+    .card-image img{
+        width: 100%;
+        height: auto;
+    }
+    .product-content {
+        display: grid;
+        align-items: center;
+    }
+    .product-content .lfloat{
+        justify-content: flex-start;
+        margin-bottom: 5px;
+    }
+}
+</style>
+<div class="mobile-view">
+    <div class="scroller">
+        <div class="scroller-body">
+            <span class="active">All</span>
+            <span>Food</span>
+            <span>Food</span>
+            <span>Food</span>
+            <span>Food</span>
+            <span>Food</span>
+            <span>Food</span>
+            <span>Food</span>
+            <span>Food</span>
+            <span>Food</span>
+            <span>Food</span>
+        </div>
+    </div>
+</div>
+<div style="width: 100%;">
+    <div class="no-carosuel">
+        <div class="card-image">
+            <img src="assets/img/img-11.jpg">
+        </div>
+        <div class="product-content">
+            <div class="product-tuple-description ">
+                  <div class="product-desc-rating ">
+                      <a class="hashAdded" href="#">
+                          <p class="product-title" title="PranaVital PRANA 360 Air Purifier">PranaVital PRANA 360 Air Purifier</p>
+                          <div class="product-price-row clearfix">
+                              <div class="lfloat marR10">
+                                  <span class="lfloat product-desc-price strike ">Rs. 19,999</span>
+                                  <span class="lfloat product-price" style="margin-right: 5px;">Rs.  13,699</span>
+                              </div>
+                              <div class="product-discount">
+                                  <span>32% Off</span>
+                              </div>
+                              <div class="Ratings"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star active"></i></div>
+                          </div>
+                      </a>
+                  </div>
+            </div>
+            <div class="product-hover-state">
+                 <span>Add to Cart <i class="icon-shopping-cart"></i></span>
+                 <div class="price"> 
+                     <b class="min">-</b> <input type="text" name="" value="1"> <b class="max">+</b>
+                 </div>
+             </div>
+        </div>
+    </div>
+    <div class="no-carosuel">
+        <div class="card-image">
+            <img src="assets/img/img-11.jpg">
+        </div>
+        <div class="product-content">
+            <div class="product-tuple-description ">
+                  <div class="product-desc-rating ">
+                      <a class="hashAdded" href="#">
+                          <p class="product-title" title="PranaVital PRANA 360 Air Purifier">PranaVital PRANA 360 Air Purifier</p>
+                          <div class="product-price-row clearfix">
+                              <div class="lfloat marR10">
+                                  <span class="lfloat product-desc-price strike ">Rs. 19,999</span>
+                                  <span class="lfloat product-price" style="margin-right: 5px;">Rs.  13,699</span>
+                              </div>
+                              <div class="product-discount">
+                                  <span>32% Off</span>
+                              </div>
+                              <div class="Ratings"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star active"></i></div>
+                          </div>
+                      </a>
+                  </div>
+            </div>
+            <div class="product-hover-state">
+                 <span>Add to Cart <i class="icon-shopping-cart"></i></span>
+                 <div class="price"> 
+                     <b class="min">-</b> <input type="text" name="" value="1"> <b class="max">+</b>
+                 </div>
+             </div>
+        </div>
+    </div>
+    <div class="no-carosuel">
+        <div class="card-image">
+            <img src="assets/img/img-11.jpg">
+        </div>
+        <div class="product-content">
+            <div class="product-tuple-description ">
+                  <div class="product-desc-rating ">
+                      <a class="hashAdded" href="#">
+                          <p class="product-title" title="PranaVital PRANA 360 Air Purifier">PranaVital PRANA 360 Air Purifier</p>
+                          <div class="product-price-row clearfix">
+                              <div class="lfloat marR10">
+                                  <span class="lfloat product-desc-price strike ">Rs. 19,999</span>
+                                  <span class="lfloat product-price" style="margin-right: 5px;">Rs.  13,699</span>
+                              </div>
+                              <div class="product-discount">
+                                  <span>32% Off</span>
+                              </div>
+                              <div class="Ratings"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star active"></i></div>
+                          </div>
+                      </a>
+                  </div>
+            </div>
+            <div class="product-hover-state">
+                 <span>Add to Cart <i class="icon-shopping-cart"></i></span>
+                 <div class="price"> 
+                     <b class="min">-</b> <input type="text" name="" value="1"> <b class="max">+</b>
+                 </div>
+             </div>
+        </div>
+    </div>
+    <div class="no-carosuel">
+        <div class="card-image">
+            <img src="assets/img/img-11.jpg">
+        </div>
+        <div class="product-content">
+            <div class="product-tuple-description ">
+                  <div class="product-desc-rating ">
+                      <a class="hashAdded" href="#">
+                          <p class="product-title" title="PranaVital PRANA 360 Air Purifier">PranaVital PRANA 360 Air Purifier</p>
+                          <div class="product-price-row clearfix">
+                              <div class="lfloat marR10">
+                                  <span class="lfloat product-desc-price strike ">Rs. 19,999</span>
+                                  <span class="lfloat product-price" style="margin-right: 5px;">Rs.  13,699</span>
+                              </div>
+                              <div class="product-discount">
+                                  <span>32% Off</span>
+                              </div>
+                              <div class="Ratings"><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star active"></i></div>
+                          </div>
+                      </a>
+                  </div>
+            </div>
+            <div class="product-hover-state">
+                 <span>Add to Cart <i class="icon-shopping-cart"></i></span>
+                 <div class="price"> 
+                     <b class="min">-</b> <input type="text" name="" value="1"> <b class="max">+</b>
+                 </div>
+             </div>
+        </div>
+    </div>
+</div>
+
+<section class="floater" style="overflow-x: scroll;overflow-y:hidden;height: 65px;flex-wrap: nowrap;align-items: center;justify-content: flex-start;">
        <a class="similarity filter" data-toggle="modal" data-target="#myModal" style="margin-right: 20px;color: white !important;">
           <i class="icon-compare_arrows"></i> <div></div> <span style="margin-right: 10px;"> Filter</span>
        </a>
@@ -3793,7 +3997,7 @@
                 </a>
            </div>
        </div>
-    </section>
+</section>
     <style type="text/css">
         @media (min-width: 576px){
             .modal-dialog {
@@ -3877,8 +4081,13 @@
             padding-right: 0px !important;
         }
         #myModal .category-bar li{
-            display: flex !important;justify-content: space-between !important;
-            padding: 4px 10px !important;color: #b1acac;font-size: 13.5px;width: 100% !important;border:none !important;
+            display: flex !important;
+            justify-content: space-between !important;
+            padding: 4px 10px !important;
+            color: #b1acac;
+            font-size: 13.5px;
+            width: 100% !important;
+            border:none !important;
             cursor: pointer;
         }
         .filter-buttons span{
@@ -4467,6 +4676,10 @@
         $('.pincode-location').fadeIn();
         $('.login-phase').fadeOut();
     });
+  $('.scroller-body span').click(function(){
+    $(this).addClass('active');
+    $(this).siblings().removeClass();
+  })
     $('.icon-heart-o').click(function(){
         $(this).hide();
         $(this).next('.icon-heart').show();
