@@ -1539,6 +1539,16 @@
                     width: 100%;
                     height: auto;
                 }
+                @media all and (max-width: 480px){
+                    .carousel-controller {
+                        height: 240px !important;
+                    }
+                }
+                @media all and (max-width: 440px){
+                    .carousel-controller {
+                        height: 200px !important;
+                    }
+                }
             </style>
             <div class="main-section">
                 <div style="display: flex;">
@@ -3723,7 +3733,7 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        height: 55px;
+        height: 47px;
         width: 100%;
     }
     .scroller-body span:first-child{
@@ -3734,7 +3744,7 @@
         font-size: 15px;
         background-color: grey;
         border-radius: 5px;
-        padding: 7px 12px;
+        padding: 5px 10px;
         color: white;
         display: inline-table;
         cursor: pointer;
