@@ -43,8 +43,13 @@
 .icon-th-list{
     font-weight: bolder;font-size: 110%;margin-right: 10px;margin-left: 5px;cursor: pointer;display: contents;
 }
-.mobile-view{
-    display: block;
+.mobile-view, .mobile-view + div{
+    display: none;
+}
+@media all and (max-width: 800px){
+    .mobile-view, .mobile-view + div{
+        display: block;
+    }
 }
 @media (max-width: 800px){
     .main-section {
@@ -3718,14 +3723,7 @@
             </div>
 </div>
 <style type="text/css">
-    .mobile-view{
-        display: none;
-    }
-    @media all and (max-width: 800px){
-        .mobile-view{
-            display: block;
-        }
-    }
+    
     .scroller{
         width: 100%;
         margin-top: 0px;
