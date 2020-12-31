@@ -1441,7 +1441,7 @@
                                     </li>    
                                 </ul>
                             </li>
-                            <li>
+                            <li style="position: relative;">
                                 <div class="top-cat-name selected" style="display: flex;justify-content: space-between;">
                                     <span style="font-size: 13px;">Brand</span> <i class="icon-plus"></i><i class="icon-minus" style="font-size: 11px;color: #666;"></i>
                                 </div>
@@ -1470,7 +1470,9 @@
 
                                     <button class="btn bb btn-outline-dark" style="margin-top: 10px;margin-left: 0px;height: 30px;"> View More</button>
                                 </ul>
+                                
                             </li>
+
                             <li>
                                 <div class="top-cat-name selected" style="display: flex;justify-content: space-between;">
                                     <span style="font-size: 13px;">Discount %</span> <i class="icon-plus"></i><i class="icon-minus" style="font-size: 11px;color: #666;"></i>
@@ -3904,17 +3906,25 @@
         width: 60%;
         margin-left: 40%;
     }
+    select::-ms-expand{
+        display: none;
+    }select{
+        -webkit-appearance:none;
+        -moz-appearance:none;
+        width: 10px;
+    }
 </style>
 <section class="floater" style="align-items: center;justify-content: flex-end;position: static;background-color: #cacaca;">
        <a class="similarity filter"  style="background-color: #fff;margin-right: 10px;color: black !important;height: 45px; padding: 0px;border: none;position: relative;order: 1;margin-left: 10px;">
-          <i class="icon-compare_arrows" style="padding-right: 15px;padding-left: 10px;padding-top: 20px;padding-bottom: 20px;"></i> <div style="height: 45px;border-left: 1px solid #cacaca;margin: 0px;"></div> <span style="margin-right: 10px;padding-left: 15px;padding-right: 10px;" data-toggle="modal" data-target="#myModal"> Filter</span>
-        <ul class="meek">
-           <li class="active">Shoe</li>
-           <li>Home</li>
-           <li>Home</li>
-           <li>Home</li>
-           <li>Home</li>
-       </ul>
+        <form action="https://www.w3schools.com/action_page.php" style="position: relative;"> 
+            <select name="cars" style="padding: 10px 16px;">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="fiat">Fiat</option>
+              <option value="audi">Audi</option>
+            </select><i class="icon-compare_arrows" style="position: absolute;left: 50%;top: 50%;transform: translate(-50% , -50%);"></i> 
+        </form>
+          <div style="height: 45px;border-left: 1px solid #cacaca;margin: 0px;"></div> <span style="margin-right: 10px;padding-left: 15px;padding-right: 10px;" data-toggle="modal" data-target="#myModal"> Filter</span>
        </a>
 
        <div style="display: grid;">
