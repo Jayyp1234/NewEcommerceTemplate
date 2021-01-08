@@ -1303,11 +1303,11 @@
     display: flex;justify-content: space-between;
   }
   .product-view{
-    width: 500px;
+    width: 520px;
     position: fixed;
   }
   .details-view{
-    width: calc(100% - 510px);margin-left: 510px;
+    width: calc(100% - 530px);margin-left: 530px;
   }
   .flex{
     display: flex;width: 100%;justify-content: space-around;
@@ -1319,7 +1319,7 @@
   .button-adds{
     width: 100%;display: flex;justify-content: space-between;margin-top: 5px;align-items:center;
   }
-  .button-adds-up button{padding: 10px 35px;background-color: #007bff;color: white;font-weight: 500;font-size: 83%;
+  .button-adds-up button{padding: 5px 25px;background-color: #007bff;color: white;font-weight: 500;font-size: 100%;
   }
   .nav-tabs-phase .nav-link.active{
    color: #007bff !important;
@@ -1408,6 +1408,8 @@
     }
     .button-adds-up button {
     padding: 10px 50px;
+    padding-bottom: 30px;
+    border-radius: 0px;
   }
     #bigNav2{
       display: none;
@@ -1489,7 +1491,7 @@
 }
 
 .column{float: left;width: 70px;height: 65px;display: inline-block;}
-.modaling {display: none;position: fixed;z-index: 99999999999;display: grid;align-items: center;align-content: center;left: 0;top: 0;width: 100%;height: 100%;overflow: hidden;background-color: black;}
+.modaling {display: none;position: fixed;z-index: 99999999999;align-items: center;align-content: center;left: 0;top: 0;width: 100%;height: 100%;overflow: hidden;background-color: black;}
 .rate{padding: 7px 15px;border-radius: 5px;font-weight: 400;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);border-color: #c2c3c3 !important;}
 
 
@@ -1597,24 +1599,6 @@
             </div>
             
           </div>
-          <!--
-          <div class="button-adds">
-            <span>Size:</span>
-            <div>
-              <button type="button" style="padding: 2px 4px;font-size: 90%;" class="btn btn-outline-primary">40</button>
-              <button type="button" style="padding: 2px 4px;font-size: 90%;" class="btn btn-outline-primary">40</button>
-              <button type="button" style="padding: 2px 4px;font-size: 90%;" class="btn btn-outline-primary">40</button>
-              <button type="button" style="padding: 2px 4px;font-size: 90%;" class="btn btn-outline-primary">40</button>
-              <button type="button" style="padding: 2px 4px;font-size: 90%;" class="btn btn-outline-primary">40</button>
-            </div>
-          </div>
-          <div class="button-adds">
-            <span>Color:</span>
-            <div class="color"> <button type="button" data-toggle="tooltip" title="Black" style="padding:12px 12px;font-size: 90%;" class="btn bg-dark black"></button>
-              <button type="button" data-toggle="tooltip" title="Brown" style="padding:12px 12px;font-size: 90%;" class="btn bg-warning brown"></button> 
-              <button type="button" data-toggle="tooltip" title="Golden" style="padding:12px 12px;font-size: 90%;background-color: brown;" class="btn golden"></button>
-            </div>
-          </div>-->
         </div>
       </div>
     </div>
@@ -1632,6 +1616,8 @@
   width: 190px;
   color: #423a3a !important;
     font-weight: 500;
+}.tab-content table tr td:first-child {
+    width: 100px;
 }
 </style>
    
@@ -1644,9 +1630,7 @@
         <a href="index.html">Mens Footware</a> <i class="icon-angle-right"></i>
         <a href="index.html">Black Shoes</a> 
       </span>
-      
-       
-       
+ 
       <br>
       <div id="demo" class="carousel mini-slide slide" data-ride="carousel">
 
@@ -1714,38 +1698,38 @@
         <span style="font-weight: bold;font-size: 110%;">₹450 <sub style="text-decoration: line-through;color: #bbbab9;">₹1,500 </sub></span><span style="margin-left:5px;font-weight:bold;color: green;font-size: 90%;"> 70% off</span><br>
       
         <div class="sizecolor">
-          <div class="button-adds">
-            <span>Size:</span>
-            <div>
+            <table class="button-adds">
+              <tr> 
+                <td> <span>Size: </span> </td>  
+                <td>
+                    <div>
               <button type="button" style="padding: 2px 4px;font-size: 90%;" class="btn btn-outline-primary">40</button>
               <button type="button" style="padding: 2px 4px;font-size: 90%;" class="btn btn-outline-primary">40</button>
               <button type="button" style="padding: 2px 4px;font-size: 90%;" class="btn btn-outline-primary">40</button>
               <button type="button" style="padding: 2px 4px;font-size: 90%;" class="btn btn-outline-primary">40</button>
               <button type="button" style="padding: 2px 4px;font-size: 90%;" class="btn btn-outline-primary">40</button>
-            </div>
-          </div>
-          <div class="button-adds">
-            <span>Color:</span>
-            <div class="color"> <button type="button" data-toggle="tooltip" title="Black" style="padding:12px 12px;font-size: 90%;" class="btn bg-dark black"></button>
+            </div></td></tr>
+              <tr> 
+                <td><span>Color: </span>  </td>    
+                <td>
+                    <div class="color"> <button type="button" data-toggle="tooltip" title="Black" style="padding:12px 12px;font-size: 90%;" class="btn bg-dark black"></button>
               <button type="button" data-toggle="tooltip" title="Brown" style="padding:12px 12px;font-size: 90%;" class="btn bg-warning brown"></button> 
               <button type="button" data-toggle="tooltip" title="Golden" style="padding:12px 12px;font-size: 90%;background-color: brown;" class="btn golden"></button>
-            </div>
-          </div>
-          <div class="button-adds">
-            <span>Ram:</span>
-            <div>
+                    </div>                            
+                </td>
+            </tr>
+              <tr> 
+                <td><span>Ram: </span>          </td>  
+                <td>  <div>
               <button type="button" style="padding: 2px 4px;font-size: 90%;" class="btn btn-outline-primary">4 GB</button>
               <button type="button" style="padding: 2px 4px;font-size: 90%;" class="btn btn-outline-primary">5 GB</button>
               <button type="button" style="padding: 2px 4px;font-size: 90%;" class="btn btn-outline-primary">6 GB</button>
-            </div>
-          </div>
-          <div class="button-adds">
-            <span>Storage:</span>
-            <div>
+                </div>             </td></tr>
+              <tr> <td><span>Storage: </span>   </td>  <td>  <div>
               <button type="button" style="padding: 2px 4px;font-size: 90%;" class="btn btn-outline-primary">128 GB</button>
               <button type="button" style="padding: 2px 4px;font-size: 90%;" class="btn btn-outline-primary">64 GB</button>
-            </div>
-          </div>
+            </div>                           </td></tr>
+            </table>
           <br>
         </div>
       </div>
@@ -2083,7 +2067,6 @@
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();
   });
   $('.view-more').click(function(){
     $('.li').slideToggle();
@@ -2149,8 +2132,6 @@
     }
     $('.image-display img').attr('src' , 'Product Description/images/views/golden/image1_view1.png');
   });
-  $('[data-toggle="tooltip"]').tooltip();
-  imageZoom("myimage", "myresult");
 </script>
 
 </html>
